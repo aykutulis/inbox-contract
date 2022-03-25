@@ -1,12 +1,13 @@
 {
-  "name": "simple-inbox",
+  "name": "inbox",
   "version": "1.0.0",
   "main": "dist/index.js",
   "author": "Aykut Ulış",
   "license": "MIT",
   "scripts": {
     "compile": "ts-node src/compile.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "mocha"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
@@ -14,6 +15,9 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "solc": "^0.8.13"
+    "ganache-cli": "^6.12.2",
+    "mocha": "^9.2.2",
+    "solc": "^0.8.13",
+    "web3": "^1.7.1"
   }
 }
