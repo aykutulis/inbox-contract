@@ -17,7 +17,7 @@ const initialContractArgs: string[] = (() => {
   try {
     return JSON.parse(INITIAL_CONTRACT_ARGS);
   } catch (e) {
-    throw new Error('"INITIAL_CONTRACT_ARGS" must be a JSON array');
+    throw new Error('"INITIAL_CONTRACT_ARGS" environment variable must be a JSON array');
   }
 })();
 

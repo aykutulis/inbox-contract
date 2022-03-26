@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "compile": "ts-node src/compile.ts",
+    "deploy": "ts-node src/deploy.ts",
     "build": "tsc",
     "test": "mocha -r ts-node/register 'src/test/**/*.ts'"
   },
